@@ -1,0 +1,91 @@
+*{
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+
+    
+}
+.content {
+    border:solid 1px red;
+    padding-left: 200px;
+    padding-right: 200px;
+   
+    
+}
+
+.container{
+    border: 1px rgb(130, 231, 238) solid;   
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    
+}
+
+
+/** why is nav not spreading out with spacebetween*/
+
+nav.navigation{
+    border: solid 1px blue;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+      
+
+}
+
+li.img-logo {
+    border: 1px black solid;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li.nav-list{
+    border: 1px green solid;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+    
+
+
+}
+
+
+
+.text-container{
+    border: solid 1px yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+
+
+
+}
+
+button.button-blue{
+    background-color: blue;
+    color:white;
+    border-radius: 20px;
+}
+
+button.button-white{
+    border-color: gray;
+    border-radius: 20px;
+}
+.img-container{
+    border: red 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+
+    
+}
