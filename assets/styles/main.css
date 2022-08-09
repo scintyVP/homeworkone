@@ -1,28 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 body{
+    width: 100%;
     background-color: white;
+    
+   
+}
+h1,h2,h3,h4,h5,h6  {
     font-family: 'Rubik', sans-serif;
-    
-
-    
+}
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1.h1main-title{
     font-size: 70px;
 }
-p.pmain-text {
-    font-weight:100;
-}
+
 h3.h3bottom-titles {
     font-size: 30px;
 }
 
 
+
 a{
     text-decoration: none;
     color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 .content {
 
@@ -38,17 +43,16 @@ a{
 }
 
 .container{
-     
-    width: 100%;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
     height: auto;
     background-color: white;
     
-    
+        
 }
 header.header {
-    display: flex;
     width: 100%;
-    
     
 }
 
@@ -56,9 +60,8 @@ header.header {
 nav.navigation{
   
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 0 270px;
+    
 
 }
 
@@ -99,8 +102,7 @@ ul.nav-list{
 .content-wrapper{
     display: flex;
     flex-direction: column;
-    
-    margin:100px 270px;
+    margin:150px 0px;
     max-width: fit-content;
     justify-content: space-between;
     height: 400px;
@@ -109,20 +111,14 @@ ul.nav-list{
 
 
 .content-title{
-    
     align-items: center;
-    padding: 20px;
    
+}
 
-}
-.text-container {
-    
-    padding: 20px;
-}
 .subscription-links{
     display: flex;
     gap: 30px;
-    padding: 20px;
+    
     
 }
 
@@ -155,10 +151,10 @@ a.subscriptionlink-white{
 .login  {
     display: flex;
     justify-content: center;
-    margin:0 270px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
     
 }
 
@@ -167,7 +163,7 @@ a.subscriptionlink-white{
     flex-direction: column;
     align-items: left;
     padding-top: 250px;
-    padding-right: 35px;
+    padding-right: 48px;
     border: 1px solid #D3D3D3;
     border-top-left-radius: 20px;
     gap: 20px;
