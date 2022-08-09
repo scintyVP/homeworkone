@@ -1,32 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
-body{
-    width: 100%;
-    background-color: white;
+:root {
+    --primary-color: black;
+    --secondary-color: #FDFDFD;
+    --white-color: white;
     
-   
 }
+body {
+    color: var(--primary-color);
+    width: 100%;
+    line-height: 1.5em;
+}
+
 h1,h2,h3,h4,h5,h6  {
     font-family: 'Rubik', sans-serif;
+    line-height: 1.5em;
 }
 p {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1.h1main-title{
+h1{
     font-size: 70px;
 }
 
-h3.h3bottom-titles {
+h3 {
     font-size: 30px;
 }
 
 
 
 a{
+    color: var(--primary-color);
     text-decoration: none;
-    color: black;
     font-family: 'Open Sans', sans-serif;
 }
 .content {
@@ -39,7 +46,7 @@ a{
 }
 .w-full{
     width: 100%;
-    background-color: white;
+
 }
 
 .container{
@@ -47,18 +54,18 @@ a{
     max-width: 1400px;
     margin: 0 auto;
     height: auto;
-    background-color: white;
     
         
 }
 header.header {
     width: 100%;
-    
+
 }
 
 
 nav.navigation{
-  
+    width: 100%;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     
@@ -66,11 +73,7 @@ nav.navigation{
 }
 
 .navigation-wrapper{
-    
     display: flex;
-    flex-direction: row;
-    
-
 }
 
 a.logo {
@@ -79,14 +82,27 @@ a.logo {
     align-items: center;
 
 }
-a.buynow-link{
+
+.primary-button {
     display: flex;
     border: 1px solid #D3D3D3;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px 30px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     
 }
+
+.primary-button.light-style{
+    background-color: white;
+
+}
+
+.primary-button.dark-style{
+    background-color: blue;
+    color: white;
+}
+
+
 
 ul.nav-list{
 
@@ -148,30 +164,16 @@ a.subscriptionlink-white{
 
 
 
-.login  {
+.login {
     display: flex;
     justify-content: center;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    
+    border-radius: 30px;
     
 }
 
-.login-google {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding-top: 250px;
-    padding-right: 48px;
-    border: 1px solid #D3D3D3;
-    border-top-left-radius: 20px;
-    gap: 20px;
-    padding-left: 150px;
 
-    
-    
-}
 
 a.loginlink-google {
     display: flex;
@@ -187,18 +189,27 @@ a.loginlink-google {
        
 }
 
-.login-quote {
+
+
+.login .login-block{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-top: 250px;
-    padding-left: 75px;
-    padding-right: 100px;
-    height: 500px;
+    height: 400px;
+    justify-content: center;
+    padding-right: 48px;
     border: 1px solid #D3D3D3;
-    border-top-right-radius: 20px;
-    background-color: #D3D3D3;
-    
+    gap: 20px;
+    padding-left: 150px;
 }
 
-
+.login-block.login-left {
+    border:1px solid grey;
+    border-top-left-radius: 30px;
+    background-color: white;
+}
+.login-block.login-right {
+    border: 1px solid red;
+    border-top-right-radius: 30px;
+    background-color: blue;
+    
+}
