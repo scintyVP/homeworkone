@@ -1,27 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: black;
+    --primary-color: rgba(52,52,52,1);
+    --primary-color-oppacity:rgba(52,52,52,0.8);
     --secondary-color: #d3d3d3;
     --white-color: white;
     --border: 1px solid #d3d3d3;
     --dark-button:rgba(0,82,255,0.8743872549019608);
-    --container-width: 1400px;
+    --layout-width: 1400px;
+    --grey-color: #616161;
+    --heading-weight-bold: 500;
+    --paragraph-weight-light: 300;
+    --paragraph-weight-regular:400;
+    --paragraph-weight-bold:700;
+    --default-font-size: 16px;
 }
+/** create var for headings*/
 body {
-    color: var(--primary-color);
-    width: 100%;
+    color: var(--primary-color-oppacity);
+    font-size: var(--default-font-size);
     line-height: 1.5em;
 }
 
 h1,h2,h3,h4,h5,h6  {
     font-family: 'Rubik', sans-serif;
     line-height: 1.5em;
+    color: var(--primary-color);
+    font-weight: var(--heading-weight-bold);
 }
 p {
     font-family: 'Open Sans', sans-serif;
-    
+    font-weight: var(--paragraph-weight-regular);
 }
 
 h1{
@@ -48,19 +58,21 @@ a{
 
 
 .container{
-    width: var(--container-width);
+    width: var(--layout-width);
     margin: 0 auto;
     height: auto;
     
         
 }
+
+
 header.header {
-    width: var(--container-width)
+    width: 100%;
 }
 
 
 nav.navigation{
-    width: var(--container-width);
+    width: 100%;
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
@@ -114,8 +126,7 @@ ul.nav-list{
 .content-wrapper{
     display: flex;
     flex-direction: column;
-    margin:150px 0px;
-    max-width: fit-content;
+    padding: 150px 0px;
     justify-content: space-between;
     height: auto;
     gap: 50px;
@@ -140,9 +151,10 @@ ul.nav-list{
 
 
 .login {
+    
     display: flex;
     justify-content: center;
-    width: var(--container-width);
+    width: var(--layout-width);
     border-radius: 30px;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -158,11 +170,11 @@ a.loginlink-google {
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
+    padding: 5px 0px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     gap: 10px;
-    width: 500px;
-    
+    width: 450px;
+    font-size: 0.8em;    
     
        
 }
@@ -176,12 +188,17 @@ a.loginlink-google {
     justify-content: center;
     border: var(--border);
     gap: 20px;
-    width: var(--container-width);
+    width: var(--layout-width);
     padding-left: 150px;
     
     
     
 }
+.login-block .login-text {
+    color:var(--grey-color);
+    font-weight: var(--paragraph-weight-regular);
+}
+
 
 .login-block.login-left {
     border-top-left-radius: 30px;
@@ -193,3 +210,29 @@ a.loginlink-google {
     background-color: var(--secondary-color);
     
 }
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5%;
+    margin: 150px 0;
+}
+.service-list > .service-list-element{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.service-list > .service-list-element > .icon { 
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
