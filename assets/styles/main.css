@@ -3,8 +3,10 @@
 
 :root {
     --primary-color: black;
-    --secondary-color: #FDFDFD;
+    --secondary-color: #d3d3d3;
     --white-color: white;
+    --border: 1px solid #d3d3d3;
+    --dark-button:rgba(0,82,255,0.8743872549019608);
     
 }
 body {
@@ -19,10 +21,11 @@ h1,h2,h3,h4,h5,h6  {
 }
 p {
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 h1{
-    font-size: 70px;
+    font-size: 90px;
 }
 
 h3 {
@@ -35,22 +38,16 @@ a{
     color: var(--primary-color);
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 .content {
-
     max-width: 100%;
     min-height: 100vh;
-    
-    
-    
-}
-.w-full{
-    width: 100%;
 
 }
+
 
 .container{
-    justify-content: center;
     max-width: 1400px;
     margin: 0 auto;
     height: auto;
@@ -59,7 +56,6 @@ a{
 }
 header.header {
     width: 100%;
-
 }
 
 
@@ -77,7 +73,7 @@ nav.navigation{
 }
 
 a.logo {
-    
+
     display: flex;
     align-items: center;
 
@@ -85,7 +81,9 @@ a.logo {
 
 .primary-button {
     display: flex;
-    border: 1px solid #D3D3D3;
+    justify-content: center;
+    align-items: center;
+    border: var(--border);
     border-radius: 30px;
     padding: 10px 30px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -93,13 +91,15 @@ a.logo {
 }
 
 .primary-button.light-style{
-    background-color: white;
+    background-color: var(--white-color);
+    
 
 }
 
 .primary-button.dark-style{
-    background-color: blue;
-    color: white;
+    background-color: var(--dark-button);
+    color: var(--white-color);
+    border-color: var(--dark-button);
 }
 
 
@@ -122,15 +122,18 @@ ul.nav-list{
     margin:150px 0px;
     max-width: fit-content;
     justify-content: space-between;
-    height: 400px;
-    
+    height: auto;
+    gap: 50px;
+   
 }
 
 
 .content-title{
     align-items: center;
+    
    
 }
+
 
 .subscription-links{
     display: flex;
@@ -144,7 +147,7 @@ a.subscriptionlink-blue{
     background-color: #1E90FF;
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--white-color);
     border-radius: 30px;
     padding: 15px 5px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -154,9 +157,9 @@ a.subscriptionlink-blue{
 
 a.subscriptionlink-white{
     display: flex;
-    border:1px solid #D3D3D3;
+    border:var(--border)    ;
     border-radius: 30px;
-    background-color: white;
+    background-color: var(--white-color);
     align-items: center;
     padding:5px 20px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -168,8 +171,9 @@ a.subscriptionlink-white{
     display: flex;
     justify-content: center;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 30px;
+    align-items: center;
+    
     
 }
 
@@ -177,7 +181,7 @@ a.subscriptionlink-white{
 
 a.loginlink-google {
     display: flex;
-    border: 1px solid #D3D3D3;
+    border: var(--border);
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -185,6 +189,7 @@ a.loginlink-google {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     gap: 10px;
     width: 500px;
+    
     
        
 }
@@ -196,20 +201,22 @@ a.loginlink-google {
     flex-direction: column;
     height: 400px;
     justify-content: center;
-    padding-right: 48px;
-    border: 1px solid #D3D3D3;
+    border: var(--border);
     gap: 20px;
+    width: 100%;
     padding-left: 150px;
+    
+    
+    
 }
 
 .login-block.login-left {
-    border:1px solid grey;
     border-top-left-radius: 30px;
-    background-color: white;
+    background-color: var(--white-color);
+    
 }
 .login-block.login-right {
-    border: 1px solid red;
     border-top-right-radius: 30px;
-    background-color: blue;
+    background-color: var(--secondary-color);
     
 }
