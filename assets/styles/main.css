@@ -7,7 +7,7 @@
     --white-color: white;
     --border: 1px solid #d3d3d3;
     --dark-button:rgba(0,82,255,0.8743872549019608);
-    
+    --container-width: 1400px;
 }
 body {
     color: var(--primary-color);
@@ -48,19 +48,19 @@ a{
 
 
 .container{
-    max-width: 1400px;
+    width: var(--container-width);
     margin: 0 auto;
     height: auto;
     
         
 }
 header.header {
-    width: 100%;
+    width: var(--container-width)
 }
 
 
 nav.navigation{
-    width: 100%;
+    width: var(--container-width);
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
@@ -72,12 +72,7 @@ nav.navigation{
     display: flex;
 }
 
-a.logo {
 
-    display: flex;
-    align-items: center;
-
-}
 
 .primary-button {
     display: flex;
@@ -143,36 +138,14 @@ ul.nav-list{
 }
 
 
-a.subscriptionlink-blue{
-    background-color: #1E90FF;
-    display: flex;
-    align-items: center;
-    color: var(--white-color);
-    border-radius: 30px;
-    padding: 15px 5px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    
-
-}
-
-a.subscriptionlink-white{
-    display: flex;
-    border:var(--border)    ;
-    border-radius: 30px;
-    background-color: var(--white-color);
-    align-items: center;
-    padding:5px 20px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
-
 
 .login {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: var(--container-width);
     border-radius: 30px;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     
     
 }
@@ -203,7 +176,7 @@ a.loginlink-google {
     justify-content: center;
     border: var(--border);
     gap: 20px;
-    width: 100%;
+    width: var(--container-width);
     padding-left: 150px;
     
     
