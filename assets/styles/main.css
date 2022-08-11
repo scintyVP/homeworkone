@@ -14,9 +14,17 @@
     --paragraph-weight-light: 300;
     --paragraph-weight-regular:400;
     --paragraph-weight-bold:700;
-    --default-font-size: 16px;
+    --hover-color-light: rgba(211,211,211,0.5);
+    --hover-color-blue:rgba(0,82,255,0.9);
+    --h1-size: 72px;
+    --h2-size: 60px;
+    --h3-size: 48px;
+    --h4-size: 36px;
+    --h5-size: 30px;
+    --h6-size: 20px;
+    --default-font-size: 18px;
 }
-/** create var for headings*/
+
 body {
     color: var(--primary-color-oppacity);
     font-size: var(--default-font-size);
@@ -35,11 +43,22 @@ p {
 }
 
 h1{
-    font-size: 90px;
+    font-size: var(--h1-size);
 }
-
-h3 {
-    font-size: 30px;
+h2{
+    font-size: var(--h2-size);
+}
+h3{
+    font-size: var(--h3-size);
+}
+h4{
+    font-size: var(--h4-size);
+}
+h5 {
+    font-size: var(--h5-size);
+}
+h6 {
+    font-size: var(--h6-size);
 }
 
 
@@ -87,6 +106,7 @@ nav.navigation{
 
 
 .primary-button {
+    transition:all 1000ms;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,9 +117,9 @@ nav.navigation{
     
 }
 
+
 .primary-button.light-style{
     background-color: var(--white-color);
-    
 
 }
 
@@ -109,7 +129,15 @@ nav.navigation{
     border-color: var(--dark-button);
 }
 
-
+.primary-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    background-color: var(--hover-color-light);
+}
+.primary-button.dark-style:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    color:black;
+    background-color: var(--hover-color-blue);
+}
 
 ul.nav-list{
 
@@ -118,7 +146,7 @@ ul.nav-list{
     gap: 15px;
     align-items: center;
     gap: 50px;
-
+    border-radius: 30px;
 
 
 }
@@ -179,7 +207,11 @@ a.loginlink-google {
        
 }
 
-
+a.loginlink-google:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 6px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: 1s;
+    background-color: var(--hover-color-light);
+}
 
 .login .login-block{
     display: flex;
@@ -202,11 +234,13 @@ a.loginlink-google {
 
 .login-block.login-left {
     border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     background-color: var(--white-color);
     
 }
 .login-block.login-right {
     border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     background-color: var(--secondary-color);
     
 }
@@ -236,3 +270,45 @@ a.loginlink-google {
     padding: 5px;
 }
 
+.design-offer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 150px 0;
+    gap: 50px;
+    
+
+}
+
+.design-offer .design-offer-element {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border: var(--border);
+    border-radius: 30px;
+    
+    width: 50%; 
+}
+.design-offer-element .text-container{
+    width: 100%;
+    padding: 50px;
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.design-offer .option-list {
+   width: 70%;
+   
+}
+
+.image-container.position-center {
+    justify-content: center;
+}
+
+.image-container.position-right {
+    justify-content: flex-end;
+} 
