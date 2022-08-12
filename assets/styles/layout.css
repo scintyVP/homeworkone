@@ -1,0 +1,40 @@
+.content {
+    max-width: 100%;
+    min-height: 100vh;
+
+}
+
+
+.container{
+    width: var(--layout-width);
+    margin: 0 auto;
+    height: auto;
+    
+        
+}
+
+.flex-full{
+    width: 100%;
+    display: flex;
+    margin: 150px 0;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+header.header {
+    width: 100%;
+}
+
+
+nav.navigation{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.navigation-wrapper{
+    display: flex;
+}

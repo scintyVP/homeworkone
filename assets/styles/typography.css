@@ -1,0 +1,44 @@
+body {
+    color: var(--primary-color-oppacity);
+    font-size: var(--default-font-size);
+    line-height: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6  {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5em;
+    color: var(--primary-color);
+    font-weight: var(--heading-weight-bold);
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--paragraph-weight-regular);
+}
+
+h1{
+    font-size: var(--h1-size);
+}
+h2{
+    font-size: var(--h2-size);
+}
+h3{
+    font-size: var(--h3-size);
+}
+h4{
+    font-size: var(--h4-size);
+}
+h5 {
+    font-size: var(--h5-size);
+}
+h6 {
+    font-size: var(--h6-size);
+}
+
+
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
