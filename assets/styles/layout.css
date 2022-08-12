@@ -21,6 +21,10 @@
     gap: 50px;
 }
 
+.flex-full.column{
+    flex-direction: column;
+}
+/* add flex-full for logi*/
 header.header {
     width: 100%;
 }
@@ -35,6 +39,21 @@ nav.navigation{
 
 }
 
-.navigation-wrapper{
+.navigation-wrapper { 
     display: flex;
+    gap: 30px;
+    align-items: center;
+
+
+}
+.w-full{
+    width: 100%;
+    background-color: white;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+  
+
 }

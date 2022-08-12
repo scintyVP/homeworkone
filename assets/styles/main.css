@@ -50,16 +50,6 @@ ul.nav-list{
 
 }
 
-.content-wrapper{
-    display: flex;
-    flex-direction: column;
-    padding: 150px 0px;
-    justify-content: space-between;
-    height: auto;
-    gap: 50px;
-   
-}
-
 
 .content-title{
     align-items: center;
@@ -78,9 +68,6 @@ ul.nav-list{
 
 
 .login {
-    display: flex;
-    justify-content: center;
-    width: var(--layout-width);
     border-radius: 30px;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
