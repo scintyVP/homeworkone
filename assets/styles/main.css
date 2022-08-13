@@ -177,3 +177,24 @@ a.loginlink-google:hover{
 .image-container.position-right {
     justify-content: flex-end;
 } 
+
+.flex-full .powerful-system-element{
+    display: flex;
+    border: var(--border);
+    border-radius: 30px;
+    width:100%;
+    background-color: var(--secondary-color);
+}
+.powerful-system-element .text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+
+}
+
+.powerful-system-element .system-list {
+    width: 40%;
+}
