@@ -26,11 +26,11 @@
     flex-direction: column;
     gap: 50px;
 }
-/*
+
 .flex-full.login {
-    
+    width: 100%;
 }
-*/
+
 .flex-full.design{
     gap: 50px;
 }
@@ -45,8 +45,6 @@ nav.navigation{
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
-    
-
 }
 
 .navigation-wrapper { 
@@ -58,12 +56,19 @@ nav.navigation{
 }
 .w-full{
     width: 100%;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 .image-container {
     display: flex;
     justify-content: flex-end;
-  
-
+    margin: 50px 0;
+    width: 100%;
 }
+.image-container.position-center {
+    justify-content: center;
+}
+
+.image-container.position-right {
+    justify-content: flex-end;
+} 

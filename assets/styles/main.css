@@ -2,6 +2,7 @@
 @import url("./reset.css");
 @import url("./layout.css");
 @import url("./typography.css");
+@import url("components.css");
 
 
 .primary-button {
@@ -39,22 +40,17 @@
 }
 
 ul.nav-list{
-
     list-style: none;
     display: flex;
     gap: 15px;
     align-items: center;
     gap: 50px;
     border-radius: 30px;
-
-
 }
 
 
 .content-title{
     align-items: center;
-    
-   
 }
 
 
@@ -64,12 +60,6 @@ ul.nav-list{
     
     
 }
-
-
-
-
-
-
 
 a.loginlink-google {
     display: flex;
@@ -81,9 +71,7 @@ a.loginlink-google {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     gap: 10px;
     width: 450px;
-    font-size: 0.8em;    
-    
-       
+    font-size: 0.8em;       
 }
 
 a.loginlink-google:hover{
@@ -101,37 +89,26 @@ a.loginlink-google:hover{
     gap: 20px;
     width: var(--layout-width);
     padding-left: 150px;
-    
-    
-    
 }
 .login-block .login-text {
     color:var(--grey-color);
     font-weight: var(--paragraph-weight-regular);
 }
-
-
 .login-block.login-left {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    background-color: var(--white-color);
-    
+    background-color: var(--white-color);   
 }
 .login-block.login-right {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: var(--secondary-color);
-    
 }
-
-
 .flex-full .service-list-element{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    
+    gap: 20px;   
 }
-
 .service-list-element > .icon { 
     border-radius: 10px;
     background-color: var(--secondary-color);
@@ -142,9 +119,6 @@ a.loginlink-google:hover{
     height: 50px;
     padding: 5px;
 }
-
-
-
 .flex-full .design-offer-element {
     display: flex;
     flex-direction: column;
@@ -159,24 +133,11 @@ a.loginlink-google:hover{
     padding: 50px;
 }
 
-.image-container {
-    display: flex;
-    width: 100%;
-    margin: 50px 0;
-}
 
 .design-offer .option-list {
    width: 70%;
    
 }
-
-.image-container.position-center {
-    justify-content: center;
-}
-
-.image-container.position-right {
-    justify-content: flex-end;
-} 
 
 .flex-full .powerful-system-element{
     display: flex;
@@ -186,15 +147,13 @@ a.loginlink-google:hover{
     background-color: var(--secondary-color);
 }
 .powerful-system-element .text-container {
-    display: flex;
     flex-direction: column;
     padding: 50px;
-    width: 100%;
-    height: fit-content;
     gap: 20px;
-
+    width: 100%;
 }
 
 .powerful-system-element .system-list {
     width: 40%;
+
 }
