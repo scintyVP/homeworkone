@@ -23,4 +23,12 @@
     --h5-size: 30px;
     --h6-size: 20px;
     --default-font-size: 18px;
+    --h1-mobile-size: 40px;
+    --h2-mobile-size: 335px;
+    --h3-mobile-size: 30px;
+    --h4-mobile-size: 25px;
+    --h5-mobile-size: 20px;
+    --h6-mobile-size: 15px;
+    --default-mobile-size:10px;
+ 
 }
