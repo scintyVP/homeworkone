@@ -152,16 +152,33 @@ a.loginlink-google:hover {
   width: 40%;
 }
 
-@media screen and (min-width: 320px) and (max-width:768px) {
-    .container{
-        border:1px solid red;
-        width: 100%;
-        padding: 0 5%;
-    }
-    .login{
-        flex-direction: column;
-    }
-    .login .login-block {
+#button-open-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 20px;
+}
+#button-open-mobile span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    border: 1px solid red;
+    width: 100%;
+    padding: 0 5%;
+  }
+  .navigation-wrapper {
+    display: none;
+  }
+  .login {
+    flex-direction: column;
+  }
+  .login .login-block {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -170,89 +187,80 @@ a.loginlink-google:hover {
     width: 100%;
     border-radius: 20px;
   }
-    .login-block .login-text {
-        width: 100%;
+  .login-block .login-text {
+    width: 100%;
   }
-    .login-block {
+  .login-block {
     padding: 20px;
+  }
+  a.loginlink-google {
+    width: 100%;
+  }
+  h1 {
+    font-size: var(--h1-mobile-size);
+  }
+  h2 {
+    font-size: var(--h2-mobile-size);
+  }
+  h3 {
+    font-size: var(--h3-mobile-size);
+  }
+  h4 {
+    font-size: var(--h4-mobile-size);
+  }
+  h5 {
+    font-size: var(--h5-mobile-size);
+  }
+  h6 {
+    font-size: var(--h6-mobile-size);
+  }
+  p {
+    font-size: var(--default-size);
+  }
+  .container {
+    border: 1px solid green;
+    width: 100%;
+  }
+  nav.navigation {
+    width: 100%;
+  }
+  ul.nav-list {
+    gap: 0;
+    justify-content: flex-end;
+  }
+  .subscription-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-full {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-}
-    a.loginlink-google {
-        width: 100%;
-    }
+  .login .login-block {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    align-items: center;
+  }
+  .flex-full.design {
+    flex-direction: column;
+    width: 100%;
+  }
+  .flex-full .design-offer-element {
+    width: 100%;
+    padding: none;
+    gap: 20%;
+  }
 
-
-}
-
-@media screen and (max-width:320px){
-    h1{
-        font-size: var(--h1-mobile-size);
-    }
-    h2{
-        font-size: var(--h2-mobile-size);
-    }
-    h3{
-        font-size: var(--h3-mobile-size);
-    }
-    h4{
-        font-size: var(--h4-mobile-size);
-    }
-    h5 {
-        font-size: var(--h5-mobile-size);
-    }
-    h6 {
-        font-size: var(--h6-mobile-size);
-    }
-    p {
-        font-size: var(--default-size);
-    }
-    .container{
-        border: 1px solid green;
-        width: 100%;
-    }
-    nav.navigation{
-        width: 100%;
-    }
-    ul.nav-list {
-        gap: 0;
-        justify-content: flex-end;
-      }
-    .subscription-links {
-        display: flex;
-        flex-direction: column;
-    
-      }
-    .flex-full{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-
-    .login .login-block {
-        width: 100%;
-        height: auto;
-        padding: 5%;
-        align-items: center;
-    }
-    .flex-full.design{
-        flex-direction: column;
-        width: 100%;
-    }
-    .flex-full .design-offer-element {
-        width: 100%;
-        padding: none;
-        gap: 20%;
-      }
-    
-      .flex-full .powerful-system-element {
-        width: 100%;
-        flex-direction: column;
-        
-      }
-      .flex-full .design-offer-element {
+  .flex-full .powerful-system-element {
+    width: 100%;
+    flex-direction: column;
+  }
+  .flex-full .design-offer-element {
     width: 100%;
     padding: none;
   }
@@ -265,6 +273,9 @@ a.loginlink-google:hover {
   .powerful-system-element .system-list {
     width: 100%;
   }
-    
+  .service-list-element {
+    margin: 5% 0;
+    align-items: center;
+    text-align: center;
+  }
 }
-
